@@ -12,3 +12,7 @@ def count2(num):
 def count(arr):
   counts = [count2(n) for n in arr]
   return min(counts)
+
+num = int(input())
+arr = map(int, input().split())
+print(count(arr))
